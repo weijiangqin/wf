@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        canvas{
+            border:1px solid red;
+        }
+    </style>
+</head>
+<body>
+<script src="./js/game.js"></script>
+<script src="./js/sky.js"></script>
+<script src="./js/pipe.js"></script>
+<script src="./js/Land.js"></script>
+<script src="./js/Bird.js"></script>
+<canvas width="800" height="500"></canvas>
+<script>
+   var canvas =  document.querySelector("canvas");
+   var ctx = canvas.getContext("2d");
+
+//  var img = new Image();
+//  img.onload = function(){
+//          var   sky1 = new Sky({
+//              ctx:ctx,
+//              img:img,
+//              index:0
+//          });
+//
+//      var   sky2 = new Sky({
+//          ctx:ctx,
+//          img:img,
+//          index:1
+//      });
+//      var   sky3 = new Sky({
+//          ctx:ctx,
+//          img:img,
+//          index:2
+//      });
+//      setInterval(function(){
+//          ctx.clearRect(0,0,canvas.width,canvas.height);
+//          sky1.render();
+//          sky2.render();
+//          sky3.render();
+//      },30);
+//
+//  };
+
+
+
+
+//
+//  var img1 = new Image();
+//  var img2 = new Image();
+//
+//
+//  img2.onload = function(){
+//        var   pipe1 = new Pipe({
+//            ctx:ctx,
+//            upImg:img1,
+//            downImg:img2,
+//            index:0
+//        });
+//      var   pipe2 = new Pipe({
+//          ctx:ctx,
+//          upImg:img1,
+//          downImg:img2,
+//          index:1
+//      });
+//      var   pipe3 = new Pipe({
+//          ctx:ctx,
+//          upImg:img1,
+//          downImg:img2,
+//          index:2
+//      });
+//      var   pipe4 = new Pipe({
+//          ctx:ctx,
+//          upImg:img1,
+//          downImg:img2,
+//          index:3
+//      });
+//      var   pipe5 = new Pipe({
+//          ctx:ctx,
+//          upImg:img1,
+//          downImg:img2,
+//          index:4
+//      });
+//      var   pipe6 = new Pipe({
+//          ctx:ctx,
+//          upImg:img1,
+//          downImg:img2,
+//          index:5
+//      });
+//
+//        setInterval(function(){
+//            ctx.clearRect(0,0,canvas.width,canvas.height);
+//            pipe1.render();
+//            pipe2.render();
+//            pipe3.render();
+//            pipe4.render();
+//             pipe5.render();
+////            pipe6.render();
+//        },30);
+//
+//  };
+//
+//
+////  img.src="./imgs/sky.png";
+//   img1.src="./imgs/pipe2.png";
+//   img2.src= "./imgs/pipe1.png";
+//  <!--imgPipeDown.src="pipe1";-->
+
+    var game = new Game({
+       ctx:ctx
+    });
+    game.start();
+</script>
+</body>
+</html>
